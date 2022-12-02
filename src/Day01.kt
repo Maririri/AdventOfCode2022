@@ -1,10 +1,10 @@
 fun main() {
     fun part1(input: List<String>): Int {
-        return input.maxOf { s -> s.split("\n").sumOf { it.toInt() } }
+        return input.maxOf { s -> s.lines().sumOf { it.toInt() } }
     }
 
     fun part2(input: List<String>): Int {
-        return input.map { s -> s.split("\n").sumOf { it.toInt() } }.sortedDescending().slice(0..2).sum()
+        return input.map { s -> s.split("\n").sumOf { it.toInt() } }.sortedDescending().take(3).sum()
     }
 
     val testInput = readInputSplintByBlankLines("Day01_test")
