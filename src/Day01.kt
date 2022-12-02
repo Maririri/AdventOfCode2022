@@ -12,7 +12,7 @@ fun main() {
     check(part2(testInput) == 45000)
 
     val input = readInputSplintByBlankLines("Day01")
-    val input2 = readInputSplintByBlankLines("Day02")
+    val input2 = readInputSplintByBlankLines("Day01_2")
     println(part1(input))
     println(part2(input2))
 }
