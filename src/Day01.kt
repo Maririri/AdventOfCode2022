@@ -4,7 +4,7 @@ fun main() {
     }
 
     fun part2(input: List<String>): Int {
-        return input.map { s -> s.split("\n").sumOf { it.toInt() } }.sortedDescending().take(3).sum()
+        return input.map { s -> s.lines().sumOf { it.toInt() } }.sortedDescending().take(3).sum()
     }
 
     val testInput = readInputSplintByBlankLines("Day01_test")
